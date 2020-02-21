@@ -1,16 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Calc from './ts/hello.world'
-import "./index.css"
-import "./index.scss"
-class Calculator extends React.Component {
-    constructor(){
-        super();
-    }
-    render() {
-        let calc = {buttons:['+']} as Calc
-      return <h1>This is a calculator exampl{JSON.stringify(calc)}</h1>;
-    }
-  }
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-  ReactDOM.render(<Calculator />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
